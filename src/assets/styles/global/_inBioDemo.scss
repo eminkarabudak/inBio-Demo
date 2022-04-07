@@ -1,0 +1,35 @@
+.icon {
+line-height: 1;
+}
+
+.icon:before {
+font-family: inBioDemo !important;
+font-style: normal;
+font-weight: normal !important;
+vertical-align: top;
+}
+
+
+  %icon-facebook {
+  content: "\f101";
+  }
+
+  .icon-facebook:before {
+  content: "\f101";
+  }
+
+  %icon-instagram {
+  content: "\f102";
+  }
+
+  .icon-instagram:before {
+  content: "\f102";
+  }
+
+  %icon-linkedin {
+  content: "\f103";
+  }
+
+  .icon-linkedin:before {
+  content: "\f103";
+  }

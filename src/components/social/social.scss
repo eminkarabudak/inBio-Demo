@@ -1,0 +1,37 @@
+.social {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    list-style: none;
+    margin: 0 15px 15px 0;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: 0.2s;
+    background: var(--gradient-box);
+    position: relative;
+    z-index: 1;
+    &:hover {
+      transform: translateY(-3px);
+      background-image: var(--gradient-box-hover);
+      opacity: 1;
+      box-shadow: none;
+      transition: 0.3s ease transform;
+    }
+    img {
+      transition: 0.2s;
+      color: var(--color-textLight);
+    }
+  }
+}

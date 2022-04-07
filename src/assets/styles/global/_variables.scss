@@ -1,0 +1,40 @@
+:root {
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-box: linear-gradient(145deg, #1e2024, #23272b);
+  --gradient-box-hover: linear-gradient(to right bottom, #212428, #16181c);
+  --shadow1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  --color-bg: #222428;
+  --color-dark: #1e2024;
+  --color-primary: #ff014f;
+  --color-toggle: #191b1e;
+  --color-textLight: #c4cfde;
+  --color-textDark: #878e99;
+  --color-subtext: #ff8a71;
+}
+
+@mixin scrollbars(
+  $size,
+  $foreground-color,
+  $background-color: mix($foreground-color, white, 50%)
+) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: $size * 2;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
