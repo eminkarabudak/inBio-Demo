@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import Navbar from '../navbar'
-import Hero from '../hero'
+import Navbar from '../../components/navbar'
+import Hero from '../../components/hero'
 
 const Home = () => {
   return (
