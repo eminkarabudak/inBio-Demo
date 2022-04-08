@@ -13,49 +13,6 @@ body {
   @include scrollbars(0.5em, var(--color-text), var(--color-bg));
 }
 
-.gradient {
-  &__bg {
-    background: -moz-radial-gradient(
-      circle at 3% 25%,
-      rgba(0, 40, 83, 1) 0%,
-      rgba(4, 12, 24, 1) 25%
-    );
-
-    /* safari 5.1+,chrome 10+ */
-    background: -webkit-radial-gradient(
-      circle at 3% 25%,
-      rgba(0, 40, 83, 1) 0%,
-      rgba(4, 12, 24, 1) 25%
-    );
-
-    /* opera 11.10+ */
-    background: -o-radial-gradient(
-      circle at 3% 25%,
-      rgba(0, 40, 83, 1) 0%,
-      rgba(4, 12, 24, 1) 25%
-    );
-
-    /* ie 10+ */
-    background: -ms-radial-gradient(
-      circle at 3% 25%,
-      rgba(0, 40, 83, 1) 0%,
-      rgba(4, 12, 24, 1) 25%
-    );
-
-    /* global 92%+ browsers support */
-    background: radial-gradient(
-      circle at 3% 25%,
-      rgba(0, 40, 83, 1) 0%,
-      rgba(4, 12, 24, 1) 25%
-    );
-  }
-  &__text {
-    background: var(--gradient-text);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
 .container {
   margin: 0 3.315rem;
   transition: 0.3s ease margin;
@@ -72,65 +29,54 @@ body {
     margin: 4rem 2rem;
   }
 }
-// .section {
-//   &__padding {
-//     padding: 4rem 3.3125rem;
-//     transition: 0.3s ease padding;
-//     @include breakpoint(laptop) {
-//       padding: 2rem 4rem;
-//     }
-//     @include breakpoint(tablet) {
-//       padding: 2rem 4rem;
-//     }
-//     @include breakpoint(phablet) {
-//       padding: 2rem 2rem;
-//     }
-//     @include breakpoint(mobileonly) {
-//       padding: 2rem;
-//     }
-//   }
-//   &__margin {
-//     margin: 4rem 3.3125rem;
-//     transition: 0.3s ease margin;
-
-//     @include breakpoint(laptop) {
-//       margin: 4rem;
-//     }
-//     @include breakpoint(tablet) {
-//       margin: 4rem;
-//     }
-//     @include breakpoint(phablet) {
-//       margin: 4rem 2rem;
-//     }
-//     @include breakpoint(mobileonly) {
-//       margin: 4rem 2rem;
-//     }
-//   }
-// }
-.scale-up-center {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
-    both;
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-@-webkit-keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+h1 {
+  font-size: 60px;
+  @include breakpoint(tablet) {
+    font-size: 50px;
   }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+  @include breakpoint(phablet) {
+    font-size: 50px;
+  }
+
+  @include breakpoint(mobileonly) {
+    font-size: 32px;
   }
 }
-
-@keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+.section {
+  padding: 4rem 6.25rem;
+  max-width: 1320px;
+  margin: 0 auto !important;
+  width: 100%;
+  transition: 0.3s ease padding;
+  &::after {
+    position: absolute;
+    max-width: 1270px;
+    height: 1px;
+    background: #121415;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+  @include breakpoint(laptop) {
+    padding: 2rem 4.25rem;
+    max-width: 1140px;
+  }
+  @include breakpoint(laptop) {
+    padding: 2rem 2.25rem;
+    max-width: 1140px;
+  }
+  @include breakpoint(tablet) {
+    padding: 2rem 2.25rem;
+    max-width: 960px;
+  }
+  @include breakpoint(phablet) {
+    max-width: 620px;
+    padding: 2rem 1.25rem;
+  }
+  @include breakpoint(mobileonly) {
+    max-width: 500px;
+    padding: 0.75rem;
   }
 }

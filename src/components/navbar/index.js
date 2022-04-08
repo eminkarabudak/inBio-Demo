@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import classNames from 'classnames';
 import Hamburger from '../hamburger';
 import clickOutside from '../../hooks/clickOutside';
@@ -9,12 +9,13 @@ import './navbar.scss';
 const Navbar = () => {
   const [check, setCheck] = useState(false)
   const [toggle, setToggle] = useState(false)
+  const [navbar, setNavbar] = useState(false)
   const ref = useRef();
-  useEffect(() => {
-    // setCheck(prev => !prev)
-    // setToggle(prev => !prev)
-  }, [])
 
+  const changeBackground = () => {
+    window.scrollY >= 200 ? setNavbar(true) : setNavbar(false)
+  }
+  window.addEventListener('scroll', changeBackground)
   const onChange = () => {
     setCheck(prev => !prev)
     setToggle(prev => !prev)
@@ -89,7 +90,7 @@ const Navbar = () => {
     )
   }
   return (
-    <div className='navbar' >
+    <div className={navbar ? 'navbar active' : 'navbar'} >
       <div className='navbar__logo'>
         <img src={require("../../assets/images/logo.png")} alt="logo" />
       </div>
@@ -109,8 +110,7 @@ const Navbar = () => {
             <Menu />
           </div>
           <div className="toggle__footer">
-            <p className="toggle__content">FIND WITH ME</p>
-            <SocialBox data={social} />
+            <SocialBox data={social} title='FIND WITH ME' shadowNone />
           </div>
         </div>
       </div>
