@@ -70,7 +70,15 @@
     width: 93%;
     margin: 15px 0;
   }
-  .button:nth-child(1) {
-    margin-left: 0;
+  .button {
+    display: inline-block;
+    margin-top: 10px;
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+    @media screen and (max-width: 32.5rem) {
+      display: flex;
+      margin: 20px 0;
+    }
   }
 }
