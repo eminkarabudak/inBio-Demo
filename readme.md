@@ -2,6 +2,12 @@
 
 For educational purposes
 
+Type this code in terminal to load the project
+
+### `npm install`
+
+Type this code in terminal to start the project
+
 ### `npm start`
 
 Runs the app in the development mode.\
