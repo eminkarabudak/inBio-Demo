@@ -36,9 +36,6 @@
         cursor: auto;
       }
     }
-    .shadow-none & {
-      box-shadow: none;
-    }
     img {
       transition: 0.2s;
       max-height: 23px;
@@ -57,6 +54,8 @@
 }
 
 .shadow-none {
+  box-shadow: none;
 }
 .hover-none {
+  pointer-events: none;
 }

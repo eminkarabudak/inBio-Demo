@@ -1,0 +1,35 @@
+[
+  {
+    "className": true,
+    "to": "/",
+    "title": "Home"
+  },
+  {
+    "to": "/Features",
+    "title": "Features"
+  },
+  {
+    "to": "/Portfolio",
+    "title": "Portfolio"
+  },
+  {
+    "to": "/Resume",
+    "title": "Resume"
+  },
+  {
+    "to": "/Clients",
+    "title": "Clients"
+  },
+  {
+    "to": "Pricing",
+    "title": "Pricing"
+  },
+  {
+    "to": "Blog",
+    "title": "Blog"
+  },
+  {
+    "to": "Contact",
+    "title": "Contact"
+  }
+]

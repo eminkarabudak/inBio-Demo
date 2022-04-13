@@ -1,0 +1,19 @@
+.features {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  &__top {
+    @media screen and (max-width: 43.75rem) {
+      text-align: center;
+    }
+  }
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 3.25rem;
+    margin: 50px 0;
+    @media screen and (max-width: 75rem) {
+      grid-gap: 2rem;
+    }
+  }
+}

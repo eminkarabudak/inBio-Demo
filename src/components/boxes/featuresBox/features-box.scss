@@ -1,0 +1,42 @@
+.features-box {
+  background-image: var(--gradient-box);
+  box-shadow: var(--shadow1);
+  border-radius: 10px;
+  padding: 35px 50px;
+  &:hover {
+    background-image: var(--gradient-box-hover);
+    .features-box__content {
+      transition: 1s ease transform;
+      transform: translateY(0);
+      .features-box__more {
+        opacity: 1;
+      }
+    }
+  }
+  &__icon {
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateY(10%);
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: var(--color-textLight);
+  }
+  &__description {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color-textLight);
+    margin-bottom: 22px;
+  }
+  &__more {
+    font-size: 28px;
+    color: var(--color-primary);
+    opacity: 0;
+  }
+}

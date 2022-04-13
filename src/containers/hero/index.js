@@ -1,23 +1,24 @@
 import React from 'react'
-import SocialBox from '../social';
+import SocialBox from '../../components/social';
+import social from '../../assets/data/social'
 
 import './hero.scss';
 
 const Hero = () => {
-  const social = [
-    {
-      title: "facebook",
-      src: require('../../assets/images/icons/facebook.svg')
-    },
-    {
-      title: 'instagram',
-      src: require('../../assets/images/icons/instagram.svg')
-    },
-    {
-      title: 'linkedin',
-      src: require('../../assets/images/icons/linkedin.svg')
-    }
-  ]
+  // const social = [
+  //   {
+  //     title: "facebook",
+  //     src: require('../../assets/images/icons/facebook.svg')
+  //   },
+  //   {
+  //     title: 'instagram',
+  //     src: require('../../assets/images/icons/instagram.svg')
+  //   },
+  //   {
+  //     title: 'linkedin',
+  //     src: require('../../assets/images/icons/linkedin.svg')
+  //   }
+  // ]
 
   const skill = [
     {

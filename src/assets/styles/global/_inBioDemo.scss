@@ -18,18 +18,26 @@ vertical-align: top;
   content: "\f101";
   }
 
-  %icon-instagram {
+  %icon-hamburger {
   content: "\f102";
+  }
+
+  .icon-hamburger:before {
+  content: "\f102";
+  }
+
+  %icon-instagram {
+  content: "\f103";
   }
 
   .icon-instagram:before {
-  content: "\f102";
+  content: "\f103";
   }
 
   %icon-linkedin {
-  content: "\f103";
+  content: "\f104";
   }
 
   .icon-linkedin:before {
-  content: "\f103";
+  content: "\f104";
   }

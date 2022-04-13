@@ -9,11 +9,11 @@ iconfontMaker({
   ],
   order: ['ttf'],
   fontName: 'inBioDemo',
-  dest: 'src/assets/fonts',
+  dest: 'src/assets/styles/fonts',
   cssDest: 'src/assets/styles/global/_inBioDemo.scss',
   cssTemplate: 'src/tasks/iconTemp.hbs',
 
-  cssFontsUrl: './../fonts/'
+  cssFontsUrl: './../assets/styles/fonts/'
 }, function (error) {
   if (error) {
     console.log('Fail!', error);

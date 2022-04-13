@@ -10,7 +10,7 @@ body {
   font-family: $montserrat-sans;
   background-color: var(--color-bg);
   color: white;
-  @include scrollbars(0.5em, var(--color-text), var(--color-bg));
+  @include scrollbars(0.5em, var(--color-textDark), var(--color-textlight));
 }
 
 .container {
@@ -31,15 +31,38 @@ body {
 }
 h1 {
   font-size: 60px;
-  @include breakpoint(tablet) {
+  @include breakpoint(laptop) {
     font-size: 50px;
   }
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     font-size: 50px;
   }
 
   @include breakpoint(mobileonly) {
     font-size: 32px;
+  }
+}
+h2 {
+  font-size: 60px;
+  @include breakpoint(tablet) {
+    font-size: 38px;
+  }
+  @include breakpoint(phablet) {
+    font-size: 40px;
+  }
+
+  @include breakpoint(mobileonly) {
+    font-size: 34px;
+  }
+}
+h3 {
+  font-size: 34px;
+  @include breakpoint(tablet) {
+    font-size: 34px;
+  }
+
+  @include breakpoint(mobileonly) {
+    font-size: 30px;
   }
 }
 .section {
@@ -54,29 +77,27 @@ h1 {
     height: 1px;
     background: #121415;
     content: '';
-    top: 0;
-    left: 0;
-    right: 0;
+    inset: 0;
     margin: 0 auto;
   }
   @include breakpoint(laptop) {
-    padding: 2rem 4.25rem;
+    padding: 2rem 4.25rem 4rem;
     max-width: 1140px;
   }
   @include breakpoint(laptop) {
-    padding: 2rem 2.25rem;
+    padding: 2rem 2.25rem 4rem;
     max-width: 1140px;
   }
   @include breakpoint(tablet) {
-    padding: 2rem 2.25rem;
+    padding: 2rem 2.25rem 4rem;
     max-width: 960px;
   }
   @include breakpoint(phablet) {
     max-width: 620px;
-    padding: 2rem 1.25rem;
+    padding: 2rem 1.25rem 4rem;
   }
   @include breakpoint(mobileonly) {
     max-width: 500px;
-    padding: 0.75rem;
+    padding: 1.25rem;
   }
 }

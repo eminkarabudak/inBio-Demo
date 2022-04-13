@@ -1,0 +1,74 @@
+@forward "../toggle/toggle.scss";
+.menu {
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &:hover {
+      .menu__link {
+        opacity: 0.4;
+        .toggle__mid & {
+          opacity: 1;
+        }
+        &.current {
+          color: white;
+          opacity: 1;
+          .toggle__mid & {
+            color: var(--color-textLight);
+          }
+        }
+      }
+    }
+    .toggle__mid & {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 20px 0 100px;
+    }
+  }
+  &__item {
+    display: flex;
+    margin: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    .toggle__mid & {
+      margin: 8px 0;
+    }
+    @media screen and (max-width: 100rem) {
+      margin: 0 5px;
+      transition: 0.3s ease margin;
+    }
+  }
+  &__link {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-textLight);
+    cursor: pointer;
+    .menu__list & {
+      &:hover {
+        opacity: 1;
+        &.current {
+          color: white;
+        }
+      }
+    }
+    .toggle__mid & {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 27px;
+      &:hover {
+        color: var(--color-textLight);
+      }
+    }
+  }
+}
+
+.current {
+  color: white;
+  .toggle__mid & {
+    color: var(--color-textLight);
+  }
+}

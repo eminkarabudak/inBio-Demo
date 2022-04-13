@@ -7,9 +7,10 @@
   background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   z-index: 100;
+
   &__inner {
     height: 100vh;
-    width: 380px;
+    width: 375px;
     padding: 25px 40px;
     background-color: var(--color-toggle);
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 70%);
@@ -17,6 +18,10 @@
     transform: translateX(-380px);
     .toggle-menu-open & {
       transform: translateX(0);
+    }
+    @media screen and (max-width: 31rem) {
+      width: 310px;
+      padding: 10px;
     }
   }
   &__head {
@@ -40,12 +45,20 @@
     padding-right: 7%;
   }
   &__close {
-    border-radius: 50%;
+    zoom: 0.7;
   }
   &__mid {
     display: flex;
   }
   &__footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.toggle-menu-open {
+  visibility: visible;
+  transition: 0.5s ease all;
+  &.hamburger {
+    display: none;
   }
 }
