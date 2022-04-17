@@ -1,0 +1,94 @@
+.list-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 45px 40px;
+  margin-top: 50px;
+  background-image: var(--gradient-box);
+  box-shadow: var(--shadow1);
+  border-radius: 10px;
+  @media screen and (max-width: 62rem) {
+    padding: 30px 25px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1a1d23;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 43.75rem) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__bottom {
+  }
+  &__titles {
+  }
+  &__title {
+    color: var(--color-textLight);
+    line-height: 39px;
+    margin-bottom: 7px;
+    font-weight: 500;
+  }
+  &__subtitle {
+    color: var(--color-subText);
+    font-size: 14px;
+  }
+  &__rate {
+    background-image: var(--gradient-box);
+    box-shadow: var(--shadow1);
+    border-radius: 6px;
+    .list-box:hover & {
+      background-image: var(--color-spanBox);
+    }
+    @media screen and (max-width: 43.75rem) {
+      margin-top: 20px;
+    }
+  }
+  &__rated {
+    color: var(--color-primary);
+    font-size: 14px;
+    padding: 0 15px;
+    line-height: 36px;
+  }
+  &__description {
+    color: var(--color-textDark);
+    font-size: 18px;
+    line-height: 28px;
+    .list-box:hover & {
+      color: var(--color-textLight);
+    }
+  }
+  &:hover {
+    background-image: var(--color-hoverBox);
+    &::after {
+      background-color: var(--color-primary);
+    }
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    top: 63px;
+    left: -35px;
+    width: 10px;
+    height: 10px;
+    border: 4px solid #1b1c1d;
+    background-color: var(--color-bg);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: 0.4s all;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 63px;
+    left: -31px;
+    width: 28px;
+    border: 2px solid #1b1c1d;
+    position: absolute;
+  }
+}

@@ -13,22 +13,6 @@ body {
   @include scrollbars(0.5em, var(--color-textDark), var(--color-textlight));
 }
 
-.container {
-  margin: 0 3.315rem;
-  transition: 0.3s ease margin;
-  @include breakpoint(laptop) {
-    margin: 4rem;
-  }
-  @include breakpoint(tablet) {
-    margin: 4rem;
-  }
-  @include breakpoint(phablet) {
-    margin: 4rem 2rem;
-  }
-  @include breakpoint(mobileonly) {
-    margin: 4rem 2rem;
-  }
-}
 h1 {
   font-size: 60px;
   @include breakpoint(laptop) {
@@ -63,6 +47,13 @@ h3 {
 
   @include breakpoint(mobileonly) {
     font-size: 30px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  @include breakpoint(mobileonly) {
+    font-size: 21px;
   }
 }
 .section {

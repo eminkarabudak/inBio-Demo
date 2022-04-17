@@ -1,0 +1,10 @@
+.resume-list {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 62rem) {
+    flex-direction: column;
+    .list:nth-child(even) {
+      margin-top: 50px;
+    }
+  }
+}

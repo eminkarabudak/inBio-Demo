@@ -1,6 +1,9 @@
 import React, { Fragment } from 'react'
 import Navbar from '../../components/navbar'
-import { Features, Hero, Portfolio } from "../../containers"
+import {
+  Features, Hero, Portfolio, Resume, Testimonial,
+  Clients, Pricing, Blog, Contact, Footer
+} from "../../containers"
 const Home = () => {
   return (
     <Fragment>
@@ -8,6 +11,13 @@ const Home = () => {
       <Hero />
       <Features />
       <Portfolio />
+      <Resume />
+      <Testimonial />
+      <Clients />
+      <Pricing />
+      <Blog />
+      <Contact />
+      <Footer />
     </Fragment>
   )
 }

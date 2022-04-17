@@ -1,3 +1,10 @@
 export { default as Hero } from './hero';
 export { default as Features } from './features';
 export { default as Portfolio } from './portfolio';
+export { default as Resume } from './resume';
+export { default as Testimonial } from './testimonial';
+export { default as Clients } from './clients';
+export { default as Pricing } from './pricing';
+export { default as Blog } from './blog';
+export { default as Contact } from './contact';
+export { default as Footer } from './footer';

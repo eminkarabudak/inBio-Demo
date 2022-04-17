@@ -28,7 +28,7 @@ const Navbar = () => {
   });
 
   return (
-    <div className={navbar ? 'navbar active' : 'navbar'} >
+    <div className={navbar ? 'navbar navbar--sticky' : 'navbar'} >
       <div className='navbar__logo'>
         <img src={require("../../assets/images/logo.png")} alt="logo" />
       </div>

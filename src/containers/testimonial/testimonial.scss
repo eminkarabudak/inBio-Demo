@@ -1,0 +1,8 @@
+.testimonial {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  &__top {
+    text-align: center;
+  }
+}
