@@ -1,0 +1,40 @@
+.progress-bar {
+  margin: 20px 0;
+  &__content {
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow-progress-bar);
+    border-radius: 14px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: var(--color-progressText);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    opacity: 0.9;
+  }
+  &__rate {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    font-weight: 400;
+    color: var(--color-progressText);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.9;
+  }
+  &__progress {
+    position: relative;
+    background-image: var(--gradient-progress-bar);
+    height: 7px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease 0.4s;
+  }
+}

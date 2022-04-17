@@ -1,0 +1,16 @@
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    color: var(--color-textLight);
+    font-weight: 600;
+    line-height: 62px;
+  }
+  &__subtitle {
+    color: var(--color-primary);
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+}

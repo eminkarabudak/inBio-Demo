@@ -44,9 +44,12 @@ h3 {
   @include breakpoint(tablet) {
     font-size: 34px;
   }
+  @include breakpoint(phablet) {
+    font-size: 30px;
+  }
 
   @include breakpoint(mobileonly) {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 
@@ -59,7 +62,7 @@ h4 {
 .section {
   padding: 4rem 6.25rem;
   max-width: 1320px;
-  margin: 0 auto !important;
+  margin: 0 auto;
   width: 100%;
   transition: 0.3s ease padding;
   &::after {

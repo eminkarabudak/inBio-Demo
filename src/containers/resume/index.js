@@ -1,5 +1,6 @@
 import React from 'react'
-import ResumeList from '../../components/list/resumeList';
+import ExperienceList from '../../components/list/experienceList';
+import ProgressList from '../../components/list/progressList';
 import Tab from '../../components/tab';
 import Title from '../../components/title';
 
@@ -11,19 +12,19 @@ const Resume = () => {
   const tabData = [
     {
       title: "Education",
-      content: <ResumeList />
+      content: <ExperienceList />
     },
     {
       title: "Professional Skills",
-      content: "Professional Quailty"
+      content: <ProgressList />
     },
     {
       title: "Experience",
-      content: <ResumeList />
+      content: <ExperienceList />
     },
     {
       title: "Interview",
-      content: <ResumeList />
+      content: <ExperienceList />
     }
   ]
   return (

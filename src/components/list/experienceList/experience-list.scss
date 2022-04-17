@@ -1,10 +1,18 @@
-.resume-list {
+.experience-list {
   display: flex;
   justify-content: space-between;
   @media screen and (max-width: 62rem) {
     flex-direction: column;
     .list:nth-child(even) {
       margin-top: 50px;
+    }
+  }
+  .list__content {
+    margin-top: 50px;
+    padding-left: 34px;
+    border-left: 5px solid #17191c;
+    .list-box:nth-child(1) {
+      margin-top: 0;
     }
   }
 }

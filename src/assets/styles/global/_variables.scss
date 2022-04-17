@@ -2,7 +2,10 @@
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   --gradient-box: linear-gradient(145deg, #1e2024, #23272b);
   --gradient-box-hover: linear-gradient(to right bottom, #212428, #16181c);
+  --gradient-progress-bar: linear-gradient(145deg, #f02981 0%, #c81901 100%);
   --shadow1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  --shadow-progress-bar: inset 8px 8px 16px #00000075,
+    inset -8px -8px 16px #383e4575;
   --color-bg: #222428;
   --color-dark: #1e2024;
   --color-primary: #ff014f;
@@ -12,6 +15,7 @@
   --color-subText: #7c838e;
   --color-spanBox: #1e2025;
   --color-hoverBox: #212427;
+  --color-progressText: #c3cedd;
 }
 
 @mixin scrollbars(

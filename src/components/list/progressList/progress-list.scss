@@ -1,0 +1,6 @@
+.progress-list {
+  display: flex;
+  @media screen and (max-width: 48rem) {
+    flex-direction: column;
+  }
+}
