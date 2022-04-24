@@ -1,4 +1,24 @@
 .clients {
   display: flex;
   position: relative;
+  flex-direction: column;
+  &__top {
+    @media screen and(max-width:48rem) {
+      text-align: center;
+    }
+  }
+  &__bottom {
+    display: flex;
+  }
+  &__box {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
+    grid-gap: 2.25rem;
+    margin: 50px 0;
+    @media screen and (max-width: 75rem) {
+      grid-template-columns: repeat(auto-fill, minmax(170px, 3fr));
+      grid-gap: 2rem;
+    }
+  }
 }

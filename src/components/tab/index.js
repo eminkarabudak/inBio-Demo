@@ -3,9 +3,10 @@ import classNames from 'classnames'
 
 import './tab.scss';
 
-const Tab = ({ children, active = 0 }) => {
+const Tab = (props, { active = 0 }) => {
   const [activeTab, setActiveTab] = useState(active);
   const [tabsData, setTabsData] = useState([]);
+  const { children, className, column, sticky } = props
   useEffect(() => {
     let data = [];
 
@@ -17,9 +18,14 @@ const Tab = ({ children, active = 0 }) => {
       } = element;
       data.push({ tab, children });
     });
-
     setTabsData(data);
+
+
+
   }, [children, active]);
+
+
+
 
   const onHandle = (e, index) => {
     e.preventDefault()
@@ -27,8 +33,8 @@ const Tab = ({ children, active = 0 }) => {
   }
 
   return (
-    <div className="tab">
-      <ul className="tab__list">
+    <div className={classNames('tab', { 'tab--column': column })}>
+      <ul className={classNames('tab__list', { 'tab--sticky': sticky })}>
         {tabsData.map(({ tab }, index) => (
           <li key={index} className="tab__item">
             <a
@@ -42,15 +48,20 @@ const Tab = ({ children, active = 0 }) => {
         ))}
       </ul>
 
-      <div className="tab__content">
-        {tabsData[activeTab] && tabsData[activeTab].children}
+      <div className={classNames('tab__content', className)}>
+        {
+          tabsData[activeTab] && tabsData[activeTab].children
+        }
       </div>
     </div>
   );
 };
 
 const TabPane = ({ children }) => {
-  return { children };
+  return {
+
+    children
+  };
 };
 
 Tab.TabPane = TabPane;

@@ -42,7 +42,7 @@ h2 {
 h3 {
   font-size: 34px;
   @include breakpoint(tablet) {
-    font-size: 34px;
+    font-size: 30px;
   }
   @include breakpoint(phablet) {
     font-size: 30px;
@@ -79,19 +79,19 @@ h4 {
     max-width: 1140px;
   }
   @include breakpoint(laptop) {
-    padding: 2rem 2.25rem 4rem;
-    max-width: 1140px;
-  }
-  @include breakpoint(tablet) {
-    padding: 2rem 2.25rem 4rem;
+    padding: 2rem 1.25rem 4rem;
     max-width: 960px;
   }
+  @include breakpoint(tablet) {
+    padding: 2rem 1.25rem 4rem;
+    max-width: 720px;
+  }
   @include breakpoint(phablet) {
-    max-width: 620px;
+    max-width: 670px;
     padding: 2rem 1.25rem 4rem;
   }
   @include breakpoint(mobileonly) {
-    max-width: 500px;
+    max-width: 540px;
     padding: 1.25rem;
   }
 }

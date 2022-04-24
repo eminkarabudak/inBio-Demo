@@ -10,13 +10,23 @@
   box-shadow: var(--shadow1);
   text-transform: uppercase;
   cursor: pointer;
-  &:hover {
-    transform: translateY(-5px);
-    background-color: var(--color-dark);
-    transition: 0.3s ease transform;
-  }
+
   @media screen and (max-width: 100rem) {
     padding: 17px 19px;
     transition: 0.3s ease padding;
+  }
+  &--circular {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-bg);
+    padding: 10px;
+  }
+  &--transform {
+    &:hover {
+      transform: translateY(-5px);
+      background-color: var(--color-dark);
+      transition: 0.3s ease transform;
+    }
   }
 }

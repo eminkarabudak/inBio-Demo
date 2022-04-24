@@ -1,5 +1,6 @@
 import React from 'react'
 import SubTitle from '../title/subtitle'
+
 import './list.scss'
 
 const List = (props) => {

@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import Navbar from '../../components/navbar'
+
 import {
   Features, Hero, Portfolio, Resume, Testimonial,
   Clients, Pricing, Blog, Contact, Footer
