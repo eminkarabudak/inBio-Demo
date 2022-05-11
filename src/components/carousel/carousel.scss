@@ -1,0 +1,60 @@
+.carousel {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 20px 0;
+  &__slide {
+    white-space: nowrap;
+    transition: transform 0.5s linear 0ms;
+    user-select: none;
+    margin: 30px 0;
+  }
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    color: var(--color-textDark);
+    padding: 0 20px;
+  }
+  &__indicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: var(--gradient-box);
+    box-shadow: var(--inner-shadow);
+    cursor: pointer;
+    &--active {
+      background-color: var(--color-primary);
+    }
+  }
+  &__button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    top: 50px;
+    right: 25px;
+    font-size: 22px;
+    padding: 0;
+    color: var(--color-textDark);
+    &--left {
+      right: 105px;
+    }
+    &:hover {
+      color: var(--color-primary);
+    }
+    @media screen and (max-width: 62rem) {
+      display: none;
+    }
+  }
+}

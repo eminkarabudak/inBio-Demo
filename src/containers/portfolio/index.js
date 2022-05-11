@@ -83,9 +83,7 @@ const Portfolio = () => {
   ]
   return (
     <div className='portfolio section'>
-      <div className="portfolio__top">
-        <Title title={'My Portfolio'} subtitle={'VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK'} />
-      </div>
+      <Title title={'My Portfolio'} subtitle={'VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK'} center />
       <div className="portfolio__bottom">
         <HoverBox data={data} onClick={openModal} />
       </div>

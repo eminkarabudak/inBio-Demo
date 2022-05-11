@@ -1,0 +1,48 @@
+.testimonial-list {
+  display: flex;
+  @media screen and (max-width: 62rem) {
+    flex-direction: column;
+  }
+  &__box {
+    display: flex;
+  }
+  &__card {
+    margin: 115px 0 0 50px;
+    position: relative;
+    @media screen and (max-width: 62rem) {
+      margin: 30px 0 0 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 50px;
+      background-color: #181a1d;
+      top: 65px;
+      left: -50px;
+      opacity: 0.5;
+      z-index: -1;
+      @media screen and (max-width: 62rem) {
+        display: none;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      top: -130px;
+      left: 0;
+      opacity: 0.5;
+      background-color: transparent;
+      background-image: url('https://rainbowit.net/html/inbio/assets/images/icons/quote.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: -1;
+      @media screen and (max-width: 62rem) {
+        display: none;
+      }
+    }
+  }
+}

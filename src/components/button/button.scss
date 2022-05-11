@@ -29,4 +29,11 @@
       transition: 0.3s ease transform;
     }
   }
+  &--hover {
+    &:hover {
+      background-image: var(--gradient-box);
+      transition: 0.3s ease transform;
+      // color: var(--color-primary);
+    }
+  }
 }

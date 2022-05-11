@@ -83,12 +83,12 @@ h4 {
     max-width: 960px;
   }
   @include breakpoint(tablet) {
-    padding: 2rem 1.25rem 4rem;
     max-width: 720px;
+    padding: 2rem 1.25rem 4rem;
   }
   @include breakpoint(phablet) {
-    max-width: 670px;
-    padding: 2rem 1.25rem 4rem;
+    max-width: 540px;
+    padding: 1.25rem;
   }
   @include breakpoint(mobileonly) {
     max-width: 540px;

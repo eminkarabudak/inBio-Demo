@@ -3,10 +3,6 @@
   position: relative;
   flex-direction: column;
 
-  &__top {
-    text-align: center;
-  }
-
   &__bottom {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

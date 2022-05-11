@@ -29,9 +29,8 @@ const Resume = () => {
   ]
   return (
     <div className='resume section'>
-      <div className="resume__top">
-        <Title title='My Resume' subtitle='7+ YEARS OF EXPERIENCE' />
-      </div>
+      <Title title='My Resume' subtitle='7+ YEARS OF EXPERIENCE' center />
+
       <div className="resume__bottom">
         <Tab active={0}>
           {tabData.map((item, index) => {

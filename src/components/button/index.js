@@ -4,9 +4,9 @@ import classNames from 'classnames'
 import "./button.scss";
 
 const Button = (props) => {
-  const { title, children, circular, transform, onClick, className } = props
+  const { title, children, circular, transform, onClick, className, hover } = props
   return (
-    <button onClick={onClick} className={classNames('button', className, { 'button--circular': circular, 'button--transform': transform })}>{title} {children}</button>
+    <button onClick={onClick} className={classNames('button', className, { 'button--circular': circular, 'button--transform': transform, 'button--hover': hover })}>{title} {children}</button>
   )
 }
 
